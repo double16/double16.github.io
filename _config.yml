@@ -25,7 +25,7 @@ description: >-
   designing, implementing, and securing software solutions across diverse industries. Explore my work, certifications, and insights into the latest trends in cybersecurity, DevOps, and 
   open-source solutions.
 domain: double16.github.io
-baseurl: https://double16.github.io
+baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username:
 github_username:  double16
