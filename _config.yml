@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Patrick B. Double | SWE | Cyber Security
+title: Patrick B. Double | Secure Software Engineering
 email: "pat@patdouble.com"
 description: >-
   With over 25 years of experience in software engineering and cybersecurity, I specialize in
