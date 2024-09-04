@@ -30,6 +30,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username:
 github_username:  "double16"
 linkedin_username: "patrick-double-28b44149"
+show_excerpts: true
+disqus:
+  shortname: double16-github-io
 
 # Build settings
 theme: minima
