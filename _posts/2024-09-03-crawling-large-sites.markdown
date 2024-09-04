@@ -2,8 +2,12 @@
 layout: post
 title:  "Crawling Large Sites"
 date:   2024-09-03 11:38:10 -0500
-categories: cyber recon
+categories:
+  - cyber
+  - recon
 comments: true
+redirect_from:
+  - /cyber/recon/2024/09/03/crawling-large-sites.html
 ---
 
 I've been working on bug bounties and the tools I use for crawling HackTheBox machines do not scale well for large, public sites. These are a few things I've learned, and my methodology will improve as time goes on.
