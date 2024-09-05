@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "200f8d179101816c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1cea97524ab288c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2f8e066e68984cd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e24abd9b7f36be24",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e93db1833a866ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69f33c53e5fc1997",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d3eade112f60e93a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "stabiliz",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e1d171d402c33807",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 431.5
+  },
+  "right": {
+    "id": "ae3a1a3edd29415c",
+    "type": "split",
+    "children": [
+      {
+        "id": "18f350f5f73bfbbe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a1c98f4281c71f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/hackthebox-lab-analytics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5d2c88f3febf7488",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/hackthebox-lab-analytics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "df84115b3730bd51",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5b526bb0d7c7e5e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/hackthebox-lab-analytics.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "69f33c53e5fc1997",
+  "lastOpenFiles": [
+    "_posts/2024-06-11-hackthebox-lab-hospital.md",
+    "hackthebox/active/MonitorsThree.md",
+    "attachments/cd7a2b6cd1b213f2ec8915553bdc57f3_MD5.jpeg",
+    "attachments/Pasted image 20240813144224.png",
+    "attachments/0de4a89e4a5fbfbcf7a37115da375623_MD5.jpeg",
+    "attachments/Pasted image 20240813144208.png",
+    "attachments/daa14811eb24eff1b55b533b762c062a_MD5.jpeg",
+    "attachments/Pasted image 20240813134756.png",
+    "attachments/a4faed9a0687b4ef34435b1ef65f9d62_MD5.jpeg",
+    "attachments/Pasted image 20240813134529.png",
+    "attachments/43f0853feb32a1ee93c27bdf16d82a52_MD5.jpeg",
+    "attachments/Pasted image 20240813134511.png",
+    "hackthebox/active/Editorial.md",
+    "hackthebox/active/Sea.md",
+    "hackthebox/active/GreenHorn.md",
+    "hackthebox/active/Ghost.md",
+    "hackthebox/active/permx.md",
+    "hackthebox/active/Blazorized.md",
+    "hackthebox/active/Blurry.md",
+    "hackthebox/active/Axlle.md",
+    "hackthebox/Hospital.md",
+    "attachments",
+    "hackthebox/Sau.md",
+    "hackthebox/draft/attachments",
+    "hackthebox/draft/Office.md",
+    "hackthebox/draft/Monitored.md",
+    "hackthebox/draft/Pov.md",
+    "hackthebox/draft/Manager.md",
+    "hackthebox/draft/Surveillance.md",
+    "hackthebox/draft/Bizness.md",
+    "hackthebox/draft/Codify.md",
+    "hackthebox/draft/Analytics.md",
+    "hackthebox/draft/Devvortex.md",
+    "hackthebox/draft/CozyHosting.md",
+    "hackthebox/active/Editorial 1.md",
+    "hackthebox/draft",
+    "Home.md",
+    "hackthebox/active/attachments",
+    "metactf/active",
+    "metactf",
+    "hackthebox/active",
+    "hackthebox/Untitled/Untitled",
+    "hackthebox/attachments",
+    "hackthebox/01 - Template.md",
+    "hackthebox"
+  ]
+}
