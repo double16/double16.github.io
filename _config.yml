@@ -57,6 +57,7 @@ exclude:
   - .obsidian/
   - "*.iml"
   - .sass-cache/
+  - .idea/
   - .jekyll-cache/
   - gemfiles/
   - Gemfile
