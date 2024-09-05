@@ -1,0 +1,13 @@
+{
+  "attachmentFolderPath": "assets/attachments",
+  "newFileLocation": "current",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
+}
