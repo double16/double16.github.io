@@ -40,6 +40,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-redirect-from
+  - jekyll-category-pages
+  - jekyll-sitemap
 
 include:
   - ads.txt
