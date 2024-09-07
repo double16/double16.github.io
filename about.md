@@ -6,7 +6,11 @@ permalink: /about/
 
 ### Professional Background
 
-With over 25 years of experience in the field, I am a seasoned Software Engineer and Cyber Security professional, holding certifications such as OSCP, OSWA, and CISSP. My career spans various industries, where I have specialized in application security, DevOps, and DevSecOps, helping organizations secure their software and infrastructure.
+<p style="float: left; margin: 0 15px 15px 0;">
+  <img src="/assets/img/headshot-2018.png" alt="Patrick Double" width="100" />
+</p>
+
+With over 25 years of experience in the field, I am a seasoned Software Engineer and Cybersecurity professional, holding certifications such as OSCP, OSWA, and CISSP. My career spans various industries, where I have specialized in application security, DevOps, and DevSecOps, helping organizations secure their software and infrastructure.
 
 Currently, I serve as a Principal Consultant at Improving, where I focus on designing, implementing, and securing software solutions that meet the highest standards of security and efficiency. My expertise includes a deep understanding of technologies like Java, Python, Spring, AWS, Serverless, and Terraform, with a strong emphasis on open-source solutions.
 
