@@ -17,7 +17,7 @@
 title: Patrick B. Double | Secure Software Engineering
 email: "pat@patdouble.com"
 description: >-
-  With over 25 years of experience in software engineering and cybersecurity, I specialize in
+  With extensive experience in software engineering and cybersecurity, I specialize in
   designing, implementing, and securing software solutions across diverse industries. Explore my work, certifications, and insights into the latest trends in cybersecurity, DevOps, and 
   open-source solutions.
 #domain: double16.github.io
@@ -39,9 +39,24 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
-  - jekyll-redirect-from
-  - jekyll-category-pages
   - jekyll-sitemap
+#  - jekyll-avatar
+  - jekyll-coffeescript
+#  - jekyll-commonmark-ghpages
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+#  - jekyll-include-cache
+#  - jekyll-mentions
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+#  - jekyll-remote-theme
+#  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
 
 include:
   - ads.txt

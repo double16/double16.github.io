@@ -13,7 +13,7 @@ Penetration Test Report
 
 Patrick Double  
 pat@patdouble.com  
-https://www.linkedin.com/in/patrick-double-28b44149/
+[https://www.linkedin.com/in/patrick-double-28b44149/](https://www.linkedin.com/in/patrick-double-28b44149/)
 <div class="page-break" style="page-break-before: always;"></div>
 
 ```table-of-contents
@@ -26,7 +26,7 @@ title: **Table of Contents**
 ## Purpose and Scope
 
 "Hospital is a medium-difficulty Windows machine that hosts an Active Directory environment, a web server, and a `RoundCube` instance. ..."
- - https://app.hackthebox.com/machines/Hospital
+ - [https://app.hackthebox.com/machines/Hospital](https://app.hackthebox.com/machines/Hospital)
 
 The goal was to identify security vulnerabilities within the machine, exploit the vulnerabilities to retrieve flags `user.txt` and  `root.txt`, and identify mitigations. The instance of Hospital tested used IP address `10.129.229.189`.
 
@@ -99,7 +99,7 @@ Linux webserver 5.19.0-35-generic #36-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb 3 18:36
 "The product has a dependency on a third-party component that contains one or more known vulnerabilities."
 - [MITRE CWE 1395](https://cwe.mitre.org/data/definitions/1395.html)
 
-CVE-2023-2640 and CVE-2023-32629 were exploited using a proof of concept at https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629, gaining root access.
+CVE-2023-2640 and CVE-2023-32629 were exploited using a proof of concept at [https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629](https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629), gaining root access.
 
 ### Mitigation
 Maintain a regular patch schedule.
@@ -113,9 +113,9 @@ www-data@webserver:/var/www/html/uploads$ unshare -rm sh -c "mkdir l u w m && cp
 
 Verify root access is not obtained.
 ### References
-- https://nvd.nist.gov/vuln/detail/CVE-2023-2640
-- https://nvd.nist.gov/vuln/detail/CVE-2023-32629
-- https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629
+- [https://nvd.nist.gov/vuln/detail/CVE-2023-2640](https://nvd.nist.gov/vuln/detail/CVE-2023-2640)
+- [https://nvd.nist.gov/vuln/detail/CVE-2023-32629](https://nvd.nist.gov/vuln/detail/CVE-2023-32629)
+- [https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629](https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629)
 
 ## HTBHSPTL-2024-02: Unpatched GhostScript Software
 ### Observation
@@ -145,7 +145,7 @@ GS>
 "The product has a dependency on a third-party component that contains one or more known vulnerabilities."
 - [MITRE CWE 1395](https://cwe.mitre.org/data/definitions/1395.html)
 
-CVE-2023-36664 was exploited to leverage command injection, using a proof of concept at https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection. 
+CVE-2023-36664 was exploited to leverage command injection, using a proof of concept at [https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection](https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection. 
 
 ### Mitigation
 The software is running from a Windows batch file in the user `drbrown` account. It appears this is a user managed configuration. Work with IT to provide this service as a Windows service that is cataloged with IT assets. Then, patch management and vulnerability scanning can include the software in regular maintenance.
@@ -154,9 +154,9 @@ The software is running from a Windows batch file in the user `drbrown` account.
 Execute `gswin64c.exe` to verify the version is not out of date.
 
 ### References
-- https://nvd.nist.gov/vuln/detail/CVE-2023-36664
-- https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection
-- https://ghostscript.com/
+- [https://nvd.nist.gov/vuln/detail/CVE-2023-36664](https://nvd.nist.gov/vuln/detail/CVE-2023-36664)
+- [https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection](https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection)
+- [https://ghostscript.com/](https://ghostscript.com/)
 
 ## HTBHSPTL-2024-03: Least Privilege of Windows Apache Service
 ### Observation
@@ -167,7 +167,7 @@ The tester found the Windows Apache web server was running as the `SYSTEM` user.
 
 ### Description
 "The product performs an operation at a privilege level that is higher than the minimum level required, which creates new weaknesses or amplifies the consequences of other weaknesses."
-- https://cwe.mitre.org/data/definitions/250.html
+- [https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)
 
 Each system service should run with a dedicated service account. This allows the account to have the least privileges necessary for operation. The `SYSTEM` user should never be used to run services.
 
@@ -178,7 +178,7 @@ Configure a dedicated service account for the Windows Apache web server.
 Inspect the Windows Apache service using Task Manager or other tool to validate the process is running as a service user other than `SYSTEM`.
 
 ### References
-- https://cwe.mitre.org/data/definitions/250.html
+- [https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)
 - Finding HTBHSPTL-2024-04
 
 ## HTBHSPTL-2024-04: Least Privilege of Windows Apache Document Root
@@ -198,7 +198,7 @@ Create a separate account for managing the document root. For users allowed to m
 Use the `icacls` Windows command to verify proper permissions of the `C:\xampp\htdocs` directory.
 
 ### References
-- https://cwe.mitre.org/data/definitions/732.html
+- [https://cwe.mitre.org/data/definitions/732.html](https://cwe.mitre.org/data/definitions/732.html)
 
 ## HTBHSPTL-2024-05: Weak Passwords
 ### Observation
@@ -211,7 +211,7 @@ The tester was able to crack password hashes for the `admin` and `patient` users
 
 ### Description
 "Authentication mechanisms often rely on a memorized secret (also known as a password) to provide an assertion of identity for a user of a system. It is therefore important that this password be of sufficient complexity and impractical for an adversary to guess. The specific requirements around how complex a password needs to be depends on the type of system being protected. Selecting the correct password requirements and enforcing them through implementation are critical to the overall success of the authentication mechanism."
- - https://cwe.mitre.org/data/definitions/521.html
+ - [https://cwe.mitre.org/data/definitions/521.html](https://cwe.mitre.org/data/definitions/521.html)
 
 ### Mitigation
 - Use Windows features to enforce a strong password policy
@@ -224,7 +224,7 @@ Use operating system features to validate a strong password policy.
 For the web application, attempt to create users with weak passwords. It is not recommended to attempt to crack passwords of registered users. If successful, this will expose users passwords.
 
 ### References
-- https://cwe.mitre.org/data/definitions/521.html
+- [https://cwe.mitre.org/data/definitions/521.html](https://cwe.mitre.org/data/definitions/521.html)
 
 ## HTBHSPTL-2024-06: Improper Input Validation on File Upload
 ### Observation
@@ -235,7 +235,7 @@ The tester found the web application on port 8080 used client side controls to l
 
 ### Description
 "When the server relies on protection mechanisms placed on the client side, an attacker can modify the client-side behavior to bypass the protection mechanisms, resulting in potentially unexpected interactions between the client and server."
-- https://cwe.mitre.org/data/definitions/602.html
+- [https://cwe.mitre.org/data/definitions/602.html](https://cwe.mitre.org/data/definitions/602.html)
 
 ### Mitigation
 In addition to the client-side control, implement a server side control to only allow validate image files to be uploaded. Do not rely on the MIME type or file extension. Incorporate a trusted library to validate the contents of the file are a valid image.
@@ -244,8 +244,8 @@ In addition to the client-side control, implement a server side control to only 
 Use the Firefox dev tools to remove the client side control and attempt to upload a file that is not an image. See details in the Methodology section.
 
 ### References
-- https://cwe.mitre.org/data/definitions/434.html
-- https://cwe.mitre.org/data/definitions/602.html
+- [https://cwe.mitre.org/data/definitions/434.html](https://cwe.mitre.org/data/definitions/434.html)
+- [https://cwe.mitre.org/data/definitions/602.html](https://cwe.mitre.org/data/definitions/602.html)
 
 ## HTBHSPTL-2024-07: Least Privilege of GhostScript Service
 ### Observation
@@ -270,7 +270,7 @@ Create a service account for this featue. Use the Windows scheduled task facilit
 Verify through inspection the lack of a Windows batch file for this feature. Inspect the scheduled task for use of a dedicated service account.
 
 ### References
-- https://cwe.mitre.org/data/definitions/250.html
+- [https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)
 
 ## HTBHSPTL-2024-08: Missing Cookie HttpOnly Attribute
 ### Observation
@@ -281,7 +281,7 @@ The tester observed the `PHPSESSID` cookie used on port 8080 did not have the `H
 
 ### Description
 "The HttpOnly flag directs compatible browsers to prevent client-side script from accessing cookies. Including the HttpOnly flag in the Set-Cookie HTTP response header helps mitigate the risk associated with Cross-Site Scripting (XSS) where an attacker's script code might attempt to read the contents of a cookie and exfiltrate information obtained. When set, browsers that support the flag will not reveal the contents of the cookie to a third party via client-side script executed via XSS."
- - https://cwe.mitre.org/data/definitions/1004.html
+ - [https://cwe.mitre.org/data/definitions/1004.html](https://cwe.mitre.org/data/definitions/1004.html)
 
 ### Mitigation
 Configure the web application to enable the `HttpOnly` attribute according to the underlying technology.
@@ -290,8 +290,9 @@ Configure the web application to enable the `HttpOnly` attribute according to th
 The Firefox dev tools may be used to inspect the attributes of a cookie. Open the browser to http://hospital.htb:8080. Open the dev tools window. Verify the `HttpOnly` column is `true`.
 
 ![](/assets/attachments/Pasted%20image%2020240611041910.png)
+
 ### References
-- https://cwe.mitre.org/data/definitions/1004.html
+- [https://cwe.mitre.org/data/definitions/1004.html](https://cwe.mitre.org/data/definitions/1004.html)
 
 ## HTBHSPTL-2024-09: Missing Cookie SameSite Attribute
 ### Observation
@@ -302,18 +303,18 @@ The tester observed the `PHPSESSID` cookie used on port 8080 did not have the `S
 
 ### Description
 "The SameSite attribute controls how cookies are sent for cross-domain requests. This attribute may have three values: 'Lax', 'Strict', or 'None'. If the 'None' value is used, a website may create a cross-domain POST HTTP request to another website, and the browser automatically adds cookies to this request. This may lead to Cross-Site-Request-Forgery (CSRF) attacks if there are no additional protections in place (such as Anti-CSRF tokens)."
-- https://cwe.mitre.org/data/definitions/1275.html
+- [https://cwe.mitre.org/data/definitions/1275.html](https://cwe.mitre.org/data/definitions/1275.html)
 
 ### Mitigation
 Configure the web application to set the `SameSite` attribute to `Strict` according to the underlying technology.
 
 ### Validation
-The Firefox dev tools may be used to inspect the attributes of a cookie. Open the browser to http://hospital.htb:8080. Open the dev tools window. Verify the `Same` column is not `None`.
+The Firefox dev tools may be used to inspect the attributes of a cookie. Open the browser to [http://hospital.htb:8080](http://hospital.htb:8080). Open the dev tools window. Verify the `Same` column is not `None`.
 
 ![](/assets/attachments/Pasted%20image%2020240611041910.png)
 
 ### References
-- https://cwe.mitre.org/data/definitions/1275.html
+- [https://cwe.mitre.org/data/definitions/1275.html](https://cwe.mitre.org/data/definitions/1275.html)
 
 ## HTBHSPTL-2024-10: Missing CSRF Token
 ### Observation
@@ -324,7 +325,7 @@ The tester observed the web application on port 8080 does not use a CSRF (Cross-
 
 ### Description
 "When a web server is designed to receive a request from a client without any mechanism for verifying that it was intentionally sent, then it might be possible for an attacker to trick a client into making an unintentional request to the web server which will be treated as an authentic request. This can be done via a URL, image load, XMLHttpRequest, etc. and can result in exposure of data or unintended code execution."
-- https://cwe.mitre.org/data/definitions/352.html
+- [https://cwe.mitre.org/data/definitions/352.html](https://cwe.mitre.org/data/definitions/352.html)
 
 ### Mitigation
 "Use the "double-submitted cookie" method as described by Felten and Zeller:
@@ -334,13 +335,13 @@ When a user visits a site, the site should generate a pseudorandom value and set
 Because of the same-origin policy, an attacker cannot read or modify the value stored in the cookie. To successfully submit a form on behalf of the user, the attacker would have to correctly guess the pseudorandom value. If the pseudorandom value is cryptographically strong, this will be prohibitively difficult.
 
 This technique requires Javascript, so it may not work for browsers that have Javascript disabled."
-- https://cwe.mitre.org/data/definitions/352.html
+- [https://cwe.mitre.org/data/definitions/352.html](https://cwe.mitre.org/data/definitions/352.html)
 
 ### Validation
 Use a web application scanner to detect the presence of CSRF protection. Use a web application proxy, such as ZAP, to intercept requests and modify the CSRF token. Proper implementation will fail to process the request if the CSRF is modified.
 
 ### References
-- https://cwe.mitre.org/data/definitions/352.html
+- [https://cwe.mitre.org/data/definitions/352.html](https://cwe.mitre.org/data/definitions/352.html)
 
 ## HTBHSPTL-2024-11: Missing Content Security Policy
 ### Observation
@@ -352,7 +353,7 @@ The tester observed the web application does not provide a CSP (Content Security
 
 ### Description
 "**Content Security Policy** ([CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP)) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting ([XSS](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)) and data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution."
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 
 ### Mitigation
 For the Roundcube application, the vendor must be contacted to properly configure a CSP. A misconfigured CSP can break the application.
@@ -363,8 +364,8 @@ For the custom application on port 8080, implement a CSP with the most restricti
 The Firefox dev tools can be used to inspect the response of requests to the applications. Look for the `Content-Security-Policy` HTTP headers.
 
 ### References
-- https://cwe.mitre.org/data/definitions/693.html
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+- [https://cwe.mitre.org/data/definitions/693.html](https://cwe.mitre.org/data/definitions/693.html)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 
 ## HTBHSPTL-2024-12: Missing Anti-clickjacking Header
 ### Observation
@@ -376,7 +377,7 @@ The tester observed lack of HTTP headers mitigating click jacking attacks.
 
 ### Description
 "Clickjacking (classified as a user interface redress attack or UI redressing) is a malicious technique of tricking a user into clicking on something different from what the user perceives, thus potentially revealing confidential information or allowing others to take control of their computer "
-- https://en.wikipedia.org/wiki/Clickjacking
+- [https://en.wikipedia.org/wiki/Clickjacking](https://en.wikipedia.org/wiki/Clickjacking)
 
 ### Mitigation
 For the Roundcube application, the vendor must be contacted to properly configure the mitigation.
@@ -387,8 +388,8 @@ For the custom application on port 8080, implement a CSP including `frame-ancest
 The Firefox dev tools can be used to inspect the response of requests to the applications. Look for the `frame-ancestors` value in the `Content-Security-Policy` HTTP header, or the `X-Frame-Options` header.
 
 ### References
-- https://en.wikipedia.org/wiki/Clickjacking
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+- [https://en.wikipedia.org/wiki/Clickjacking](https://en.wikipedia.org/wiki/Clickjacking)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 
 ## HTBHSPTL-2024-13: Technology Information Disclosure
 ### Observation
@@ -408,7 +409,7 @@ Configure the web servers on both Ubuntu and Windows to not provide these header
 The Firefox dev tools can be used to inspect the response of requests to the applications. Look for the `Server` and `X-Powered-By` headers.
 
 ### References
-- https://cwe.mitre.org/data/definitions/200.html
+- [https://cwe.mitre.org/data/definitions/200.html](https://cwe.mitre.org/data/definitions/200.html)
 
 # Methodology
 
@@ -624,11 +625,11 @@ $ gobuster --wordlist /usr/share/seclists/Discovery/Web-Content/raft-large-files
 /check.php            (Status: 200) [Size: 53]
 ```
 
-The tester opened https://hospital.htb/installer/index.php . The installer looks correctly disabled.
+The tester opened [https://hospital.htb/installer/index.php](https://hospital.htb/installer/index.php). The installer looks correctly disabled.
 
 ![](/assets/attachments/Pasted%20image%2020240610075452.png)
 
-The tester opened https://hospital.htb/installer/config.php and https://hospital.htb/installer/test.php to be sure.
+The tester opened [https://hospital.htb/installer/config.php](https://hospital.htb/installer/config.php) and [https://hospital.htb/installer/test.php](https://hospital.htb/installer/test.php) to be sure.
 ![](/assets/attachments/Pasted%20image%2020240610075603.png)
 
 ### TCP 8080 HTTPS
@@ -741,7 +742,7 @@ $ gobuster --wordlist /usr/share/seclists/Discovery/Web-Content/raft-large-direc
 
 The `/uploads/` directory is interesting. If the upload form saves the files into this directory, the tester may be able to obtain code execution.
 
-The tester tried using the filename of a previously uploaded file. The URL is http://hospital.htb:8080/uploads/canva-black-minimal-motivation-quote-linkedin-banner-HoRi-2buBWk.jpg .
+The tester tried using the filename of a previously uploaded file. The URL is `http://hospital.htb:8080/uploads/canva-black-minimal-motivation-quote-linkedin-banner-HoRi-2buBWk.jpg` .
 
 ![](/assets/attachments/Pasted%20image%2020240611053727.png)
 
@@ -766,10 +767,10 @@ Files uploaded by the user are stored in the web root under the `/uploads/` dire
 PHP is used on the server listening on port 8080. The tester knows this by the filename extension of the URLs, `index.php`, `login.php`, etc. 
 
 The tester tried to execute a common PHP web shell named `predator.php`. 
-1. Login to http://hospital.htb:8080
+1. Login to [http://hospital.htb:8080](http://hospital.htb:8080)
 2. Use the Firefox dev tools to remove the image validation
 3. Upload the `predator.php` web shell
-4. Attempt to execute using http://hospital:8080/uploads/predator.php
+4. Attempt to execute using [http://hospital:8080/uploads/predator.php](http://hospital:8080/uploads/predator.php)
 
 
 ![](/assets/attachments/Pasted%20image%2020240611055514.png)
@@ -1000,9 +1001,9 @@ patient          (patient)
 
 This version of the Linux kernel is older. The tester searched using terms `Linux 5.19.0 cve poc` and found the following exploit:
 
-https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629
+[https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629](https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629)
 
-The URL for downloading the exploit is https://raw.githubusercontent.com/g1vi/CVE-2023-2640-CVE-2023-32629/main/exploit.sh.
+The URL for downloading the exploit is [https://raw.githubusercontent.com/g1vi/CVE-2023-2640-CVE-2023-32629/main/exploit.sh](https://raw.githubusercontent.com/g1vi/CVE-2023-2640-CVE-2023-32629/main/exploit.sh).
 
 The exploit is small and can be brought to the target using copy and paste.
 ```shell
@@ -1343,7 +1344,7 @@ Data: 58272 bytes of 58272 bytes copied
 Info: Upload successful!
 ```
 
-The tester open the browser to https://hospital.htb/predator.php
+The tester open the browser to [https://hospital.htb/predator.php](https://hospital.htb/predator.php)
 
 ![](/assets/attachments/Pasted%20image%2020240611162334.png)
 
@@ -1425,14 +1426,14 @@ Hospital has been fully compromised.
 
 ## Tool Versions
 
-| Tool         | Version                           | Source                                                                          |
-| ------------ | --------------------------------- | ------------------------------------------------------------------------------- |
-| Kali Linux   | 2024.2                            | https://www.kali.org/get-kali/                                                  |
-| ZAP          | Weekly 2024-05-20                 | https://www.zaproxy.org/download/                                               |
-| Firefox      | 115.11.0esr                       | https://mozilla.org                                                             |
-| predator.php | git hash de08fbc                  | https://github.com/JohnTroony/php-webshells/blob/master/Collection/Predator.php |
-| curl         | 8.7.1                             | Kali Linux package manager                                                      |
-| nc           | v1.10-48.1                        | Kali Linux package manager                                                      |
-| nc.exe       | windows-resources 0.6.10          | Kali Linux package manager                                                      |
-| john         | 1.9.0-jumbo-1+bleeding-aec1328d6c | Kali Linux package manager                                                      |
-| evil-winrm   | v3.5                              | Kali Linux package manager                                                      |
+| Tool         | Version                           | Source                                                                                                                                                             |
+| ------------ | --------------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kali Linux   | 2024.2                            | [https://www.kali.org/get-kali/](https://www.kali.org/get-kali/)                                                                                                   |
+| ZAP          | Weekly 2024-05-20                 | [https://www.zaproxy.org/download/](https://www.zaproxy.org/download/)                                                                                             |
+| Firefox      | 115.11.0esr                       | [https://mozilla.org](https://mozilla.org)                                                                                                                         |
+| predator.php | git hash de08fbc                  | [https://github.com/JohnTroony/php-webshells/blob/master/Collection/Predator.php](https://github.com/JohnTroony/php-webshells/blob/master/Collection/Predator.php) |
+| curl         | 8.7.1                             | Kali Linux package manager                                                                                                                                         |
+| nc           | v1.10-48.1                        | Kali Linux package manager                                                                                                                                         |
+| nc.exe       | windows-resources 0.6.10          | Kali Linux package manager                                                                                                                                         |
+| john         | 1.9.0-jumbo-1+bleeding-aec1328d6c | Kali Linux package manager                                                                                                                                         |
+| evil-winrm   | v3.5                              | Kali Linux package manager                                                                                                                                         |
