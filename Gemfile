@@ -7,20 +7,39 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-#gem "jekyll", "~> 4.3.3"
-gem "github-pages", "~> 232", group: :jekyll_plugins
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "jekyll", "~> 4.3.3"
 gem "minima", "~> 2.5"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
+gem "github-pages-health-check", "~> 1.18.2"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-redirect-from", "~> 0.16"
-  gem "jemoji", "~> 0.13"
-  gem "jekyll-category-pages"
+  gem "jekyll-avatar"
+  gem "jekyll-coffeescript"
+  gem "jekyll-commonmark-ghpages"
+  gem "jekyll-default-layout"
+  gem "jekyll-gist"
+  gem "jekyll-github-metadata"
+  gem "jekyll-include-cache"
+  gem "jekyll-mentions"
+  gem "jekyll-optional-front-matter"
+  gem "jekyll-paginate"
+  gem "jekyll-readme-index"
+  gem "jekyll-redirect-from"
+  gem "jekyll-relative-links"
+  gem "jekyll-remote-theme"
+  gem "jekyll-sass-converter"
+  gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+  gem "jekyll-swiss"
+  gem "jekyll-titles-from-headings"
+  gem "jemoji"
+  gem "kramdown"
+  gem "kramdown-parser-gfm"
+  gem "liquid"
+  gem "mercenary"
+  gem "nokogiri"
+  gem "rouge"
+  gem "terminal-table"
+  gem "webrick"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

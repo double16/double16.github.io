@@ -5,7 +5,6 @@ _site
 vendor
 .idea/
 *.iml
-Gemfile.lock
 .obsidian/themes
 .obsidian/appearance.json
 .obsidian/workspace.json
