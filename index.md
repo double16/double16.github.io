@@ -15,7 +15,7 @@ DevOps, or cloud technologies, this portfolio showcases my expertise, certificat
 I use to drive success in the ever-evolving tech landscape. Explore my work, insights, and the
 principles that guide my approach to security and software development.
 
-# Capture the Flag (CTF) Platforms
+### Capture the Flag (CTF) Platforms
 
 I enjoy CTFs for fun and learning. It's also a good place to try out tools. I have a VIP+ subscription to HackTheBox
 so I get my own machine instances. Don't batter shared machines, it's not nice!

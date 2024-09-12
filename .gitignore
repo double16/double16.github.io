@@ -10,3 +10,4 @@ vendor
 .obsidian/workspace.json
 .obsidian/plugins/
 *conflicted copy*
+.DS_Store
