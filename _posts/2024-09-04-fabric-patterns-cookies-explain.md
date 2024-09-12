@@ -13,19 +13,15 @@ Artificial Intelligence (AI) gets a lot of attention. I was skeptical at first, 
 ChatGPT instead of DuckDuckGo, I was impressed. After asking for it to write some code for me,
 then I was really impressed. I recently watched [Practical AI for Bounty Hunters](https://youtu.be/DqgterfPHzg?si=cLEZo9dTk5_HLUMg). Wow.
 
-Jason Haddix presented using [fabric](https://github.com/danielmiessler/fabric) to produce AI bots
-for security research. Do watch the video. He is a good presenter and there is so much useful
-information you'll likely watch it more than once.
+Jason Haddix presented using [fabric](https://github.com/danielmiessler/fabric) to produce AI bots for security research. Do watch the video. He is a good presenter and there is so much useful information you'll likely watch it more than once.
 
 I wrote an AI bot to explain the cookies used by a site. The code is available in my GitHub at [https://github.com/double16/fabric](https://github.com/double16/fabric). The examples are from public sites, no vulnerabilities are exposed, so this is legal and ethical.
 
-When running the bot, check the last comment for recommended `fabric` arguments. It significantly
-affects the outcome.
+When running the bot, check the last comment for recommended `fabric` arguments. It significantly affects the outcome.
 
 # trip.com
 
-I was an authenticated user on trip.com when I saved the raw request and response using ZAP. The
-format is the same as Burp Suite. It includes all of the request and response headers and bodies. The bot is able to extract cookies from it.
+I was an authenticated user on trip.com when I saved the raw request and response using ZAP. The format is the same as Burp Suite. It includes all of the request and response headers and bodies. The bot is able to extract cookies from it.
 
 ```shell
 $ cat trip.raw | fabric --pattern explain_cookies --temperature=.2 --presencepenalty=.2 --stream
@@ -124,6 +120,5 @@ It's essential for users to be aware of these cookies, understand their purpose,
 # Conclusion
 
 I could search all of these cookie names myself. At some point I will see enough of them to know
-by memory. The value add is that this bot is a single command and the output is great for pasting into notes. How much time would I spend searching, researching and assembling this myself? I
-will be certainly be using AI bots moving forward. I will be adding to [https://github.com/double16/fabric](https://github.com/double16/fabric) as I develop more bots.
+by memory. The value add is that this bot is a single command and the output is great for pasting into notes. How much time would I spend searching, researching and assembling this myself? I will be certainly be using AI bots moving forward. I will be adding to [https://github.com/double16/fabric](https://github.com/double16/fabric) as I develop more bots.
 
