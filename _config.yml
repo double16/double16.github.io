@@ -29,6 +29,8 @@ permalink: /l/:year/:month/:day/:title.html
 github_username:  "double16"
 linkedin_username: "patrick-double-28b44149"
 #youtube_username: "@patdouble8759"
+webmaster_verifications:
+  google: "EEBcbbQC0diGCOKWtMw4R88rof3XtExRumMooi42QyE"
 
 show_excerpts: true
 disqus:
