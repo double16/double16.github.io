@@ -14,21 +14,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Patrick B. Double | Secure Software Engineering
+title: Patrick Double | Secure Software Engineering
 email: "pat@patdouble.com"
 description: >-
   With extensive experience in software engineering and cybersecurity, I specialize in
-  designing, implementing, and securing software solutions across diverse industries. Explore my work, certifications, and insights into the latest trends in cybersecurity, DevOps, and 
+  designing, implementing, and securing software solutions across diverse industries. Explore my work and insights into the latest trends in cybersecurity, DevSecOps, and 
   open-source solutions.
 #domain: double16.github.io
+tagline: "Exploring cybersecurity, automation, and open-source trends."
 baseurl: ""
-url: "https://double16.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://double16.github.io"
 permalink: /l/:year/:month/:day/:title.html
+logo: /assets/img/headshot-2018.png
 
 #twitter_username:
 github_username:  "double16"
 linkedin_username: "patrick-double-28b44149"
 #youtube_username: "@patdouble8759"
+
+# seo
+social:
+  name: Patrick Double
+  links:
+    - https://www.linkedin.com/in/patrick-double-28b44149/
+    - https://github.com/double16
 webmaster_verifications:
   google: "EEBcbbQC0diGCOKWtMw4R88rof3XtExRumMooi42QyE"
 

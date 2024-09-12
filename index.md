@@ -14,3 +14,11 @@ efficient, and innovative software solutions. Whether you’re interested in app
 DevOps, or cloud technologies, this portfolio showcases my expertise, certifications, and the tools
 I use to drive success in the ever-evolving tech landscape. Explore my work, insights, and the
 principles that guide my approach to security and software development.
+
+# Capture the Flag (CTF) Platforms
+
+I enjoy CTFs for fun and learning. It's also a good place to try out tools. I have a VIP+ subscription to HackTheBox
+so I get my own machine instances. Don't batter shared machines, it's not nice!
+
+- HackTheBox, [https://app.hackthebox.com/profile/1656569](https://app.hackthebox.com/profile/1656569)
+- MetaCTF ACE-T, [https://lookup.hackhills.com/?id=52795](https://lookup.hackhills.com/?id=52795)
