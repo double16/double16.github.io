@@ -14,6 +14,8 @@ With over 25 years of experience in the field, I am a seasoned Software Engineer
 
 Currently, I serve as a Principal Consultant at Improving, where I focus on designing, implementing, and securing software solutions that meet the highest standards of security and efficiency. My expertise includes a deep understanding of technologies like Java, Python, Spring, AWS, Serverless, and Terraform, with a strong emphasis on open-source solutions.
 
+<div style="clear: both;"></div>
+
 ### My Approach
 
 I believe that robust security should be integrated into every stage of the software development lifecycle, from design to deployment. My approach involves using cutting-edge tools and methodologies to ensure that applications are not only functional but also resilient against threats. I prefer working with GNU/Linux systems and command-line programs, as they align with my commitment to efficiency and control.

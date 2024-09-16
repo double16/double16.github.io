@@ -10,3 +10,5 @@ layout: home
 </p>
 
 As a seasoned Software Engineer and Cybersecurity professional, I specialize in creating secure, efficient, and innovative software solutions. I focus on application security, automation, and cloud technologies. Explore my work, insights, and the principles that guide my approach to security and software development.
+
+<div style="clear: both;"></div>
