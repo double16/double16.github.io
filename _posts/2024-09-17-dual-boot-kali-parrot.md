@@ -36,29 +36,29 @@ First, install Kali Linux. This is important . It has guided mode for partitioni
 
 I choose "Graphical Install".
 
-[Open: Pasted image 20240916132200.png](assets/attachments/1225dd4485fc39f02489270b8d64d960_MD5.jpeg)
+[](/assets/attachments/1225dd4485fc39f02489270b8d64d960_MD5.jpeg)
 ![](assets/attachments/1225dd4485fc39f02489270b8d64d960_MD5.jpeg)
 
 Go through the install making the choices you'd like. When you get to the user name dialog, use the same user name on both Kali and Parrot. They are both Debian based, so the UID and GID will be 1000 on both operating systems. This will make the shared `/home` work seamlessly.
 
-[Open: Pasted image 20240916132531.png](assets/attachments/6c63768b94f841c56a8fec678cdf8d45_MD5.jpeg)
+[](/assets/attachments/6c63768b94f841c56a8fec678cdf8d45_MD5.jpeg)
 ![](assets/attachments/6c63768b94f841c56a8fec678cdf8d45_MD5.jpeg)
 
 ## Partition with LVM
 
 When you get to the following screen, pick either of the "set up LVM" options.
 
-[Open: Pasted image 20240916132644.png](assets/attachments/d51480cb2963e3813deca479c2c28a05_MD5.jpeg)
+[](/assets/attachments/d51480cb2963e3813deca479c2c28a05_MD5.jpeg)
 ![](assets/attachments/d51480cb2963e3813deca479c2c28a05_MD5.jpeg)
 
 Choose the "Separate /home partition" option. Don't try to share `/var`, and `/tmp` might be ok, but I didn't test it. You won't gain much.
 
-[Open: Pasted image 20240916132714.png](assets/attachments/6a803cc1db7fb093657b9de0a6fd317f_MD5.jpeg)
+[](/assets/attachments/6a803cc1db7fb093657b9de0a6fd317f_MD5.jpeg)
 ![](assets/attachments/6a803cc1db7fb093657b9de0a6fd317f_MD5.jpeg)
 
 This is very important, reduce the amount of disk space used for the Kali install. This controls the total amount of space used by the logical volumes, so there will be space for the Parrot OS install. LVM allows increasing space without re-partitioning later. The home volume will get the majority of the space automatically. Leave at least 60GB for Parrot if you can spare it.
 
-[Open: Screenshot 2024-09-16 at 1.27.58 PM.png](assets/attachments/cd346eff0d40aa21623b9d7e8ad9f8aa_MD5.jpeg)
+[](/assets/attachments/cd346eff0d40aa21623b9d7e8ad9f8aa_MD5.jpeg)
 ![](assets/attachments/cd346eff0d40aa21623b9d7e8ad9f8aa_MD5.jpeg)
 
 Finish the Kali install with whatever options you like.
@@ -67,51 +67,51 @@ Finish the Kali install with whatever options you like.
 
 Boot into the Parrot OS USB. If your machine's UEFI BIOS doesn't allow you to get into it with a keypress, choose the "UEFI Firmware Settings" selection from the Kali boot screen.
 
-[Open: Pasted image 20240916141901.png](assets/attachments/4f25e726ab21c5cb78ae7c35cf8d678e_MD5.jpeg)
+[](/assets/attachments/4f25e726ab21c5cb78ae7c35cf8d678e_MD5.jpeg)
 ![](assets/attachments/4f25e726ab21c5cb78ae7c35cf8d678e_MD5.jpeg)
 
 Select the "Try / Install" options.
 
-[Open: Pasted image 20240916142050.png](assets/attachments/abf32c1cc231fae882c446ed4df07c81_MD5.jpeg)
+[](/assets/attachments/abf32c1cc231fae882c446ed4df07c81_MD5.jpeg)
 ![](assets/attachments/abf32c1cc231fae882c446ed4df07c81_MD5.jpeg)
 
 Run "Install Parrot".
 
-[Open: Pasted image 20240916142333.png](assets/attachments/ffd3bc8619b5b40fadcbad7991595a4e_MD5.jpeg)
+[](/assets/attachments/ffd3bc8619b5b40fadcbad7991595a4e_MD5.jpeg)
 ![](assets/attachments/ffd3bc8619b5b40fadcbad7991595a4e_MD5.jpeg)
 
 ## Manual Partitioning
 
 When you get to the "Partitions" section, choose "Manual partitioning".
 
-[Open: Pasted image 20240916142444.png](assets/attachments/ef05f14e9bc8f92677a715670e9e9524_MD5.jpeg)
+[](/assets/attachments/ef05f14e9bc8f92677a715670e9e9524_MD5.jpeg)
 ![](assets/attachments/ef05f14e9bc8f92677a715670e9e9524_MD5.jpeg)
 
 Edit the "/dev/kali-vg/home" volume to set the mount point to `/home`.
 
 Create a new volume by selecting "Free Space" and "Create". This is the free space left during the Kali install.
 
-[Open: Pasted image 20240916142633.png](assets/attachments/11ee75ac7c7d917b7424f609bd316832_MD5.jpeg)
+[](/assets/attachments/11ee75ac7c7d917b7424f609bd316832_MD5.jpeg)
 ![](assets/attachments/11ee75ac7c7d917b7424f609bd316832_MD5.jpeg)
 
 The default for Parrot 6.1 is "btrfs", leave it. The LVM LV name should be recognizable to you as the Parrot root partition, i.e. "parror". The mount point must be "/".
 
-[Open: Pasted image 20240916142820.png](assets/attachments/315c7c37eff51ec4358e297e02bbbf83_MD5.jpeg)
+[](/assets/attachments/315c7c37eff51ec4358e297e02bbbf83_MD5.jpeg)
 ![](assets/attachments/315c7c37eff51ec4358e297e02bbbf83_MD5.jpeg)
 
 Change the storage device from the volume group to the device.
 
-[Open: Pasted image 20240916142953.png](assets/attachments/330a6a5cd0641c42a9a6bb11328ba8d9_MD5.jpeg)
+[](/assets/attachments/330a6a5cd0641c42a9a6bb11328ba8d9_MD5.jpeg)
 ![](assets/attachments/330a6a5cd0641c42a9a6bb11328ba8d9_MD5.jpeg)
 
 Edit the "FAT32" partition to be mounted at "/boot/efi". This is where Parrot will put the kernel and boot info.
 
-[Open: Pasted image 20240916143046.png](assets/attachments/f65604dfe3dd550adade0e1a47e628be_MD5.jpeg)
+[](/assets/attachments/f65604dfe3dd550adade0e1a47e628be_MD5.jpeg)
 ![](assets/attachments/f65604dfe3dd550adade0e1a47e628be_MD5.jpeg)
 
 Make the username the same as the Kali install.
 
-[Open: Pasted image 20240916143157.png](assets/attachments/b9d342eb726de11d87b021c9ce34296e_MD5.jpeg)
+[](/assets/attachments/b9d342eb726de11d87b021c9ce34296e_MD5.jpeg)
 ![](assets/attachments/b9d342eb726de11d87b021c9ce34296e_MD5.jpeg)
 
 Finish the install.
@@ -123,7 +123,7 @@ One final change I recommend when installing multiple operating systems is to di
 This change needs to be made on both Kali and Parrot because `update-grub` will be run when either has a kernel upgrade.
 
 `/etc/default/grub`:
-[Open: Pasted image 20240916151811.png](assets/attachments/b616cb76e1ddad315a3d290a057bafef_MD5.jpeg)
+[](/assets/attachments/b616cb76e1ddad315a3d290a057bafef_MD5.jpeg)
 ![](assets/attachments/b616cb76e1ddad315a3d290a057bafef_MD5.jpeg)
 
 Then apply the change:
@@ -144,7 +144,7 @@ done
 
 Rebooting shows entries for Parrot and Kali!
 
-[Open: Pasted image 20240916150844.png](assets/attachments/b4c429534159ea7c6070124172b6706c_MD5.jpeg)
+[](/assets/attachments/b4c429534159ea7c6070124172b6706c_MD5.jpeg)
 ![](assets/attachments/b4c429534159ea7c6070124172b6706c_MD5.jpeg)
 
 # Snapshots
