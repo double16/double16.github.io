@@ -4,7 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-
 # shadycompass
 
 Shady Compass is a tool to help ethical hackers cover enumeration steps. It looks for files in the current directory (and subdirectories) as tool output. Based on the findings it will recommend other tools or enumeration steps.

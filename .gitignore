@@ -8,6 +8,8 @@ vendor
 .obsidian/themes
 .obsidian/appearance.json
 .obsidian/workspace.json
+.obsidian/graph.json
 .obsidian/plugins/
 *conflicted copy*
 .DS_Store
+.trash/
