@@ -84,7 +84,7 @@ Create a new volume by selecting "Free Space" and "Create". This is the free spa
 
 ![](/assets/attachments/11ee75ac7c7d917b7424f609bd316832_MD5.jpeg)
 
-The default for Parrot 6.1 is "btrfs", leave it. The LVM LV name should be recognizable to you as the Parrot root partition, i.e. "parror". The mount point must be "/".
+The default for Parrot 6.1 is "btrfs", leave it. The LVM LV name should be recognizable to you as the Parrot root partition, i.e. "parrot". The mount point must be "/".
 
 ![](/assets/attachments/315c7c37eff51ec4358e297e02bbbf83_MD5.jpeg)
 
