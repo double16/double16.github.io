@@ -104,6 +104,28 @@ Finish the install.
 
 # Grub Changes
 
+At the time of this writing, the Kali grub configuration does not find Parrot. This can be fixed by modifying `/etc/grub.d/40_custom` with the following content:
+```
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+menuentry "Parror" {
+    chainloader (hd0,gpt1)/EFI/Parrot/grubx64.efi
+}
+```
+
+This will add an entry to the boot menu labeled `Parrot`. Choosing this will open the Parrot boot menu.
+
+`(hd0,gpt1)` will need to match the EFI partition. `hd0` is the reference to the hard drive in order that Linux finds it. `gpt1` is the partition number. For example:
+```shell
+$ mount | grep /boot/efi
+/dev/sda1 on /boot/efi type vfat (...)
+```
+For `/dev/sda1` , the `a` shows this is the first magnetic disc. (SSD have a different scheme). The `1` is the partition number. Generally, when installing on bare metal, `(hd0,gpt1)` will be the values you want.
+
 One final change I recommend when installing multiple operating systems is to disable the automatic boot. Otherwise, you'll power up your machine, grab your coffee, and too late! You need to reboot now. :p
 
 This change needs to be made on both Kali and Parrot because `update-grub` will be run when either has a kernel upgrade.
@@ -111,7 +133,7 @@ This change needs to be made on both Kali and Parrot because `update-grub` will 
 `/etc/default/grub`:
 ![](/assets/attachments/b616cb76e1ddad315a3d290a057bafef_MD5.jpeg)
 
-Then apply the change:
+Apply the changes:
 ```shell
 $ sudo update-grub
 Generating grub configuration file ...
