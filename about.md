@@ -7,7 +7,7 @@ permalink: /about/
 ### Professional Background
 
 <p style="float: left; margin: 0 15px 15px 0;">
-  <img src="/assets/img/headshot-2018.png" alt="Patrick Double" width="100" />
+  <img src="/assets/img/headshot-2025.jpg" alt="Patrick Double" width="100" />
 </p>
 
 With over 25 years of experience in the field, I am a seasoned Software Engineer and Cybersecurity professional, holding certifications such as OSCP, OSWA, and CISSP. My career spans various industries, where I have specialized in web applications and automation, supporting organizations' goals with quality software and infrastructure.

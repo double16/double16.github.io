@@ -6,7 +6,7 @@ layout: home
 ---
 
 <p style="float: left; margin: 0 15px 15px 0;">
-  <img src="/assets/img/headshot-2018.png" alt="Patrick Double" width="100" />
+  <img src="/assets/img/headshot-2025.jpg" alt="Patrick Double" width="100" />
 </p>
 
 As a seasoned Software Engineer and Cybersecurity professional, I specialize in creating secure, efficient, and innovative software solutions. I focus on application security, automation, and cloud technologies. Explore my work, insights, and the principles that guide my approach to security and software development.
