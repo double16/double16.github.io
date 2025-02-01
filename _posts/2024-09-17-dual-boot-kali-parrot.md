@@ -4,7 +4,10 @@ title: Dual Booting Kali and Parrot
 date: 2024-09-17
 categories:
   - cyber
+  - tools
 comments: true
+redirect_from:
+  - /cyber/2024/09/17/dual-boot-kali-parrot.html
 ---
 I recently acquired two monitors that included a laptop with it. I decided to use it as a disposable attack machine. Disposable in the sense that I can re-image it without data loss. Now, Kali or Parrot OS? I've been using HackTheBox pwnbox which is Parrot for a bit. How about both!
 
