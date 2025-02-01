@@ -9,13 +9,13 @@ comments: true
 ---
 TL;DR: I am currently using [Kasm Workspaces](https://www.kasmweb.com/docs/latest/index.html), which is a containerized solution, for my offensive security toolset. It solves a lot of problems for me. In my [GitHub repo](https://github.com/double16/pentest-tools/) I have an Ansible playbook to install it to 99% of what I need. Others should be able to use it with little customization.
 
-![](assets/attachments/14124ab8e6f7635c283eb0cd81f3cff3_MD5.jpeg)
+![](/assets/attachments/14124ab8e6f7635c283eb0cd81f3cff3_MD5.jpeg)
 
 # VMs are nice, but ...
 
 I really like virtualization and automation. IYKYK. I don't want my host cluttered with tools and config I forgot about, or a major upgrade left cruft around. Then there's the config change necessary for a CTF that breaks other stuff, but I find out it's broken weeks later and I don't know what I changed. There's always the searching to tweak things to get it just right. Now, on another host, I have to go back through the search because I forgot what I did. A VM is mostly isolated, so code gone wrong has a smaller blast radius.
 
-Virtualization brings some challenges too. Disk space usage can get high. For assessment isolation it's best to take a snapshot of the "clean" install and then revert. I also take a snapshot before a major upgrade. So I've got a snapshot of the base install, followed by an upgrade, followed by an assessment. What if I want to work on a CTF? Stop the machine with the bug bounty work, start from a base snapshot for the CTF. How do I run both? Clone the VM, which is a lot of disk space and time. Linked clone? Ok, well, that's another layer of effective snapshots. I typically get to the point where I cannot remove old snapshots because I don't have the disk space. Delete it all, start over. :|
+Virtualization brings some challenges too. Disk space usage can get high. For assessment isolation it's best to take a snapshot of the "clean" install and then revert. I also take a snapshot before a major upgrade. So I've got a snapshot of the base install, followed by an upgrade, followed by an assessment. What if I want to work on a CTF? Stop the machine with the bug bounty work, start from a base snapshot for the CTF. How do I run both? Clone the VM, which is a lot of disk space and time. Linked clone? Ok, well, that's another layer of effective snapshots. I typically get to the point where I cannot remove old snapshots because I don't have the disk space. Delete it all, start over.
 
 ## Containers are nicer
 
@@ -186,19 +186,19 @@ kasm_users: "test,engagement1,engagement2,ctf1,ctf2"
 
 What is the workflow like?
 
-![](assets/attachments/d5f44ec6bd8a3928d9bc35761262274c_MD5.jpeg)
+![](/assets/attachments/d5f44ec6bd8a3928d9bc35761262274c_MD5.jpeg)
 
-![](assets/attachments/47f191e52062b69101489f7c51281143_MD5.jpeg)
+![](/assets/attachments/47f191e52062b69101489f7c51281143_MD5.jpeg)
 
-![](assets/attachments/101d616a055db381ce975b9d9dd45b98_MD5.jpeg)
+![](/assets/attachments/101d616a055db381ce975b9d9dd45b98_MD5.jpeg)
 
-![](assets/attachments/0716cfb4ba1babcb38ede0292686a277_MD5.jpeg)
+![](/assets/attachments/0716cfb4ba1babcb38ede0292686a277_MD5.jpeg)
 
 The response is really good. IMHO it feels like typing on the host terminal.
 
 Kasm has a control panel that can be expanded. "Workspaces" will minimize the workspace and allow others to be launcher. "Delete Session" will destroy it, saving the persistent profile.
 
-![](assets/attachments/883f53474afdfb7460aa46c3dc8615ab_MD5.jpeg)
+![](/assets/attachments/883f53474afdfb7460aa46c3dc8615ab_MD5.jpeg)
 
 The [Kasm docs](https://www.kasmweb.com/docs/latest/index.html) are very good. Read through them to understand other features.
 
