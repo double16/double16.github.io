@@ -4,11 +4,26 @@ title: Projects
 permalink: /projects/
 ---
 
-# shadycompass
+# shyhurricane
 
-Shady Compass is a tool to help ethical hackers cover enumeration steps. It looks for files in the current directory (and subdirectories) as tool output. Based on the findings it will recommend other tools or enumeration steps.
+[https://github.com/double16/shyhurricane](https://github.com/double16/shyhurricane)
 
-[https://github.com/double16/shadycompass](https://github.com/double16/shadycompass)
+ShyHurricane is an MCP server to assist AI in offensive security testing. It aims to solve a few problems observed with
+LLMs executing shell commands:
+
+1. Spidering and directory busting commands can be quite noisy and long-running. LLMs will go through a few iterations to pick a suitable command and options. The server provides spidering and busting tools to consistently provide the LLM with usable results.
+2. Models will also enumerate websites with many curl commands. The server saves and indexes responses to return data without contacting the website repeatedly. Large sites, common with bug bounty programs, are not efficiently enumerated with individual curl commands.
+3. Port scans may take a long time causing the LLM to assume the scan has failed and issue a repeated scan. The port_scan tool provided by the server addresses this.
+
+An important feature of the server is the indexing of website content using embedding models. The `find_web_resources` tool uses LLM prompts to find vulnerabilities specific to content type: html, javascript, css, xml, HTTP headers. The content is indexed when found by the tools. Content may also be indexed by feeding external data into the `/index` endpoint. Formats supported are `katana jsonl`, `hal json` and Burp Suite Logger++ CSV. Extensions exist for Burp Suite, ZAP, Firefox and Chrome to send requests to the server as the site is browsed.
+
+# Cyber-AutoAgent-ng
+
+[https://github.com/double16/Cyber-AutoAgent-ng](https://github.com/double16/Cyber-AutoAgent-ng)
+
+<p>
+<strong>Cyber-AutoAgent-ng</strong> is a proactive security assessment tool that autonomously conducts intelligent penetration testing with natural language reasoning, dynamic tool selection, and evidence collection using AWS Bedrock, Litellm or local Ollama models with the core Strands framework.
+</p>
 
 # media-hare
 
@@ -19,7 +34,13 @@ Sundry tools for maintaining a personal media library. Rabbits (hares) like to b
 - Profanity filtering
 - Integration with Plex Media Server
 
-[https://github.com/double16/media-hare/](https://github.com/double16/media-hare/)
+[https://github.com/double16/media-hare](https://github.com/double16/media-hare)
+
+# shadycompass
+
+Shady Compass is a tool to help ethical hackers cover enumeration steps. It looks for files in the current directory (and subdirectories) as tool output. Based on the findings it will recommend other tools or enumeration steps.
+
+[https://github.com/double16/shadycompass](https://github.com/double16/shadycompass)
 
 # Contributions
 
@@ -31,9 +52,3 @@ The Zed Attack Proxy (ZAP) is one of the world’s most popular free security to
 
 - [https://github.com/zaproxy/zap-extensions](https://github.com/zaproxy/zap-extensions/pulls?q=author%3Adouble16+is%3Apr)
 - [https://github.com/zaproxy/zaproxy](https://github.com/zaproxy/zaproxy/pulls?q=author%3Adouble16+is%3Apr)
-
-## SamuraiWTF
-
-Secure Ideas Samurai Web Training Framework, a framework designed for quickly configuring training virtual machines with tools and vulnerable application targets.
-
-[https://github.com/SamuraiWTF/katana](https://github.com/SamuraiWTF/katana/pulls?q=is%3Apr+author%3Adouble16)
