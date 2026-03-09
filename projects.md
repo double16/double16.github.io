@@ -21,9 +21,7 @@ An important feature of the server is the indexing of website content using embe
 
 [https://github.com/double16/Cyber-AutoAgent-ng](https://github.com/double16/Cyber-AutoAgent-ng)
 
-<p>
-<strong>Cyber-AutoAgent-ng</strong> is a proactive security assessment tool that autonomously conducts intelligent penetration testing with natural language reasoning, dynamic tool selection, and evidence collection using AWS Bedrock, Litellm or local Ollama models with the core Strands framework.
-</p>
+Cyber-AutoAgent-ng is a proactive security assessment tool that autonomously conducts intelligent penetration testing with natural language reasoning, dynamic tool selection, and evidence collection using AWS Bedrock, litellm or local Ollama models with the core Strands framework.
 
 # media-hare
 
