@@ -7,11 +7,11 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.3"
+gem "jekyll", "~> 4.4.1"
 gem "minima", "~> 2.5"
-gem "github-pages-health-check", "~> 1.18.2"
+gem "github-pages-health-check", "~> 1.19.1"
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed", "~> 0.17"
   gem "jekyll-avatar"
   gem "jekyll-coffeescript"
   gem "jekyll-commonmark-ghpages"
@@ -50,7 +50,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
