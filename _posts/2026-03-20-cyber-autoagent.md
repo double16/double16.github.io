@@ -9,7 +9,7 @@ categories:
 comments: true
 ---
 
-The latest open source project I've been working on is a fork of the archived [Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent). It is an offensive security agent with broad reasoning and goals at the top-level with plugable modules specifying more narrow targets. My fork is at https://github.com/double16/Cyber-AutoAgent-ng.
+The latest open source project I've been working on is a fork of the archived [Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent). It is an offensive security agent with broad reasoning and goals at the top-level with plugable modules specifying more narrow targets. My fork is at [https://github.com/double16/Cyber-AutoAgent-ng](https://github.com/double16/Cyber-AutoAgent-ng).
 
 (Also keep an eye out for my shyhurricane project. It is my RAG solution to large web apps, but it needs a good agent, so I need the changes talked about here to be working first.)
 
