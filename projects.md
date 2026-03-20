@@ -34,15 +34,9 @@ Sundry tools for maintaining a personal media library. Rabbits (hares) like to b
 
 [https://github.com/double16/media-hare](https://github.com/double16/media-hare)
 
-# shadycompass
-
-Shady Compass is a tool to help ethical hackers cover enumeration steps. It looks for files in the current directory (and subdirectories) as tool output. Based on the findings it will recommend other tools or enumeration steps.
-
-[https://github.com/double16/shadycompass](https://github.com/double16/shadycompass)
-
 # Contributions
 
-I love open source. I can add features or fix things myself and contribute back. I like sharing work I've done, just as athletes invite people to their games or artists hang their work. Below are some projects I to which I contribute.
+I love open source. I can add features or fix things myself and contribute back. I like sharing work I've done, just as athletes invite people to their games or artists hang their work.
 
 ## ZAP
 
