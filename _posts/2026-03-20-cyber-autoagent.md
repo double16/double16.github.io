@@ -28,7 +28,7 @@ Recently I was encouraged to write about my experiences as I go along. Seems lik
 
 My primary machine is a MacBook Pro M1 with 32GB RAM. The results I'll be writing about are from my laptop (Ollama) or free/cheap models on OpenRouter, NVIDIA NIM, etc. The caveat with the free/cheap models are that your data is likely being used for training or publishing. Some use cases are ok, such as evaluating intentionally vulnerable apps. The engineering to get smaller models to produce good results should result in larger models being more effective and efficient. (Maybe only 💸💸 instead of 💸💸💸💸.)
 
-If you're going to ask if I've seen how **amazing** the frontier models are, and why am I not in love with them, the answer is: yes, I am fully aware of the frontier models. Boring. Where is the challenge? Where is the bit twiddling optimizations that make a 14b model get the results that matter? Also, where are you all getting all that money that's making the big corps rich??
+If you're going to ask if I've seen how **amazing** the frontier models are, and why am I not in love with them, the answer is: yes, I am fully aware of the frontier models. Boring (sort of). Where is the challenge? Where is the bit twiddling optimizations that make a 14b model get results that matter? Also, where are you all getting all that money that's making the big corps rich 😂 ??
 
 A lot of the work has been tuning configuration and maintaining an efficient context. There are competing pressures with keeping the context small, yet having enough information for the model to reason.
 
