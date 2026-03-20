@@ -32,7 +32,7 @@ If you're going to ask if I've seen how **amazing** the frontier models are, and
 
 A lot of the work has been tuning configuration and maintaining an efficient context. There are competing pressures with keeping the context small, yet having enough information for the model to reason.
 
-You'll see the current version is 0.7.0, which is primarily tool/sheel calling improvements. The next milestone is 0.8.0 and it is big :p
+You'll see the current version is 0.7.0, which is primarily tool/shell calling improvements. The next milestone is 0.8.0 and it is big :p
 
 The biggest changes are a task system and system prompt optimization. The task system is kept in long term memory and is key to allowing large scale operations. Context memory is not enough, even with frontier models. Along with the task system, system prompts need to change and be optimized.
 
