@@ -12,9 +12,9 @@ I was accepted for my first conference talk at Wild West Hackin' Fest in Denver,
 
 The topic was "Attacking AI Video Processing." I'll post a link to the video when it is available. Related to the topic is a blog post and GitHub repo:
 
-- https://github.com/bvcyber/video-fuzzing
-- https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing
-- https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing-tools
+- [https://github.com/bvcyber/video-fuzzing](https://github.com/bvcyber/video-fuzzing)
+- [https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing](https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing)
+- [https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing-tools](https://cybersecurity.bureauveritas.com/services/integrated-approach/ai-security-services/attacking-ai-video-processing-tools)
 
 WWHF was a great time! I like smaller conferences. (DefCon is too big for me.) The talks are practical and interesting. Everyone is friendly: BHIS staff, attendees, vendors.
 
