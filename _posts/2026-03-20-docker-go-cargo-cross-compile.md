@@ -3,7 +3,7 @@ layout: post
 title:  "Docker Multiple Platform Builds: Go and Cargo"
 date:   2026-03-20
 categories:
-- tools
+- docker
 comments: true
 ---
 
