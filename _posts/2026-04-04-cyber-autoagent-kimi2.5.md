@@ -3374,10 +3374,10 @@ This assessment adhered to the constraint of **NO exploitation or weaponization*
 
 
 ----
-Report Generated: 2026-04-04 22:12:08
-Operation ID: OP_20260404_182836
-Provider: litellm
-Model(s): nvidia_nim/moonshotai/kimi-k2.5
+- Report Generated: 2026-04-04 22:12:08
+- Operation ID: OP_20260404_182836
+- Provider: litellm
+- Model(s): nvidia_nim/moonshotai/kimi-k2.5
 
 
 
