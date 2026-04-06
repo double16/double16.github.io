@@ -88,4 +88,6 @@ For a larger recording, I did some experiments to see what the file size would b
 | H.265 | 23  | veryslow | 15 MB |
 | H.265 | 28  | veryslow | 11 MB |
 
-The importance of using a video file is compatibility. Not all applications will display the animated GIF properly. If you only want to show your recording on a web browser, GIF is a good option. If you want to distribute the file otherwise, I recommend converting to MP4.
+The importance of using a video file is compatibility and user experience. Not all applications will display the animated GIF properly. An animated GIF doesn't give the user control to pause or navigate through the video.
+
+If you only want to show your recording on a web browser, GIF can be a good option. If you want to distribute the file otherwise or let the user navigate, I recommend converting to MP4.
