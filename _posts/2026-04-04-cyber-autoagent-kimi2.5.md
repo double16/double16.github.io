@@ -47,7 +47,10 @@ npm start -- --auto-run --auto-approve --headless --debug \
   --iterations 1000
 ```
 
-![ginandjuice-kimi2.5-web_recon.gif](/assets/video/ginandjuice-kimi2.5-web_recon.gif)
+<video controls width="100%">
+  <source src="/assets/video/ginandjuice-kimi2.5-web_recon.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 The new reporting has much more detail, but takes a lot longer to generate. Post 0.8.0 I need to add more progress output.
 
