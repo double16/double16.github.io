@@ -23,7 +23,7 @@ I believe that robust security should be integrated into every stage of the soft
 ### Certifications & Expertise
 
 - **Certifications:** OSCP, OSWA, CISSP
-- **Technologies:** Java, Python, Spring, AWS, Serverless, Terraform
+- **Technologies:** A lot ... be a technologist, not a practitioner of a specific tech. 
 - **Specializations:** Web, API, LLM, ML, Application Security, DevOps, DevSecOps, Cloud Security, Open Source Solutions
 
 ### Beyond Work
