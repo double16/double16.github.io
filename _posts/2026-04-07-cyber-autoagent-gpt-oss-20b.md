@@ -92,6 +92,7 @@ flowchart TD
 - Without a critical or high‑severity entry point, an attacker would be unable to chain vulnerabilities to achieve a significant business impact.
 
 ## KEY FINDINGS
+
 | Severity | Count | Canonical Finding | Primary Location | Verified | Confidence |
 |----------|-------|-------------------|------------------|----------|------------|
 | Info | 4 | - | - | - | - |
@@ -241,6 +242,7 @@ contains the following entry:
 - `store_plan` – 1 use
 
 ### Execution Metrics
+
 | Metric | Value |
 |--------|-------|
 | **Operation ID** | `OP_20260404_110316` |
@@ -253,6 +255,7 @@ contains the following entry:
 | **Assessment Complete** | ❌ (pending) |
 
 ### Operation Plan
+
 The assessment follows a two‑phase approach:
 
 | Phase ID | Title | Status | Criteria |
