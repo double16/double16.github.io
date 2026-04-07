@@ -12,19 +12,19 @@ permalink: /about/
 
 I am a seasoned Software Engineer and Cybersecurity professional, holding certifications such as OSCP, OSWA, and CISSP. My career spans various industries, where I have specialized in web applications and automation, supporting organization goals with quality software and infrastructure.
 
-Currently, I serve as a Security Engineer at [Security Innovation](https://www.securityinnovation.com/), where I assess the security of web applications, APIs and infrastructure. My expertise includes a deep understanding of technologies like Java, Python, Spring, AWS, Serverless, and Terraform, with a strong emphasis on open-source solutions.
+Currently, I serve as a Security Engineer at [NetSPI](https://netspi.com), where I assess the security of web applications, APIs, LLM and machine learning models.
 
 <div style="clear: both;"></div>
 
 ### My Approach
 
-I believe that robust security should be integrated into every stage of the software development lifecycle, from design to deployment. My approach involves using cutting-edge tools and methodologies to ensure that applications are not only functional but also resilient against threats. I prefer working with GNU/Linux systems and command-line programs, as they align with my commitment to efficiency and control.
+I believe that robust security should be integrated into every stage of the software development lifecycle, from design to deployment. My approach involves using cutting-edge tools and methodologies to ensure that applications are not only functional but also resilient against threats. I prefer working with GNU/Linux systems and command-line programs because they are more efficient and just cool.
 
 ### Certifications & Expertise
 
 - **Certifications:** OSCP, OSWA, CISSP
 - **Technologies:** Java, Python, Spring, AWS, Serverless, Terraform
-- **Specializations:** Web, API, AI, Application Security, DevOps, DevSecOps, Cloud Security, Open Source Solutions
+- **Specializations:** Web, API, LLM, ML, Application Security, DevOps, DevSecOps, Cloud Security, Open Source Solutions
 
 ### Beyond Work
 

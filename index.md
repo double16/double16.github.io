@@ -9,6 +9,6 @@ layout: home
   <img src="/assets/img/headshot-2025.jpg" alt="Patrick Double" width="100" />
 </p>
 
-As a seasoned Software Engineer and Cybersecurity professional, I specialize in creating secure, efficient, and innovative software solutions. I focus on application security, automation, and cloud technologies. Explore my work, insights, and the principles that guide my approach to security and software development.
+I work in offensive security, with a focus on web applications, APIs, LLM, ML, secure code review, and security tooling. I develop practical tools and automation to improve testing efficiency. Here you’ll find my projects, research, and ramblings.
 
 <div style="clear: both;"></div>
