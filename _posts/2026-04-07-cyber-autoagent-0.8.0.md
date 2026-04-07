@@ -36,6 +36,8 @@ In addition to task, the conversation budget code keeps planning based messages 
 
 Also, when the agent won't progress and there are active tasks, the conversation is rebuilt to include the plan and active task. This has shown to be effective to keep the agent progressing.
 
+Creating tasks and serving them up to the agent was straight forward. The agent happily made tasks. I did need to add fuzzy detection of duplicates. The difficulty is that LLMs want to finish something and provide an answer to the user. I want the agent to work, keep going, keep exploring things. So the system prompts became very important to urge the agent on. There are points were it just wanted to be done, so I added code to reject tool calls to moving the plan forward or calling the `stop` tool. The failure message I return includes the active task and instructions to keep moving forward.
+
 ## Models
 
 My go-to local model has been `qwen3-coder:30b` with at least a 40K context window, 49K if my Mac unified memory allows. It does less reasoning, issuing tool calls sooner. However, the task system seems that it needs more reasoning.
