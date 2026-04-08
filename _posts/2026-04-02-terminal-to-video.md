@@ -7,7 +7,9 @@ categories:
 comments: true
 ---
 
-My terminal recording tool of choice is [asciinema](https://asciinema.org/). It has a number of advantages:
+My terminal recording tool of choice is [asciinema](https://asciinema.org/). You can use asciinema to publish your recordings. For those more interested in controlling their content (like me), I'll show how to create MP4 videos with open source tools.
+
+Why do I like asciinema?
 
 - Easy to use, scriptable
 - You can let it run in a terminal and not worry about pop-ups and such being recorded
@@ -18,7 +20,7 @@ My terminal recording tool of choice is [asciinema](https://asciinema.org/). It 
 
 ## asciinema
 
-The asciinema `--help` and web site has full documentation, I'll describe the commands I use the most.
+The asciinema `--help` and website has full documentation, I'll describe the commands I use the most.
 
 Recording:
 
