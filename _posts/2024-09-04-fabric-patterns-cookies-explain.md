@@ -3,7 +3,6 @@ layout: post
 title:  "AI Bot for Explaining Cookies"
 date:   2024-09-04 16:00:00 -0500
 categories:
-  - cyber
   - recon
   - ai
 comments: true

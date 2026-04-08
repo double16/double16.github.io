@@ -3,7 +3,6 @@ layout: post
 title:  "Cyber-AutoAgent-ng"
 date:   2026-03-20
 categories:
-- cyber
 - cyber-autoagent-ng
 - ai
 - tools

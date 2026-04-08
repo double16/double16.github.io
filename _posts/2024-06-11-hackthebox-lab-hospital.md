@@ -3,7 +3,6 @@ layout: post
 title:  "HackTheBox Hospital Report"
 date:   2024-06-11
 categories:
-  - cyber
   - report
 comments: true
 ---

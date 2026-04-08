@@ -3,7 +3,6 @@ layout: post
 title:  "Creating Personas using AI"
 date:   2024-09-12
 categories:
-  - cyber
   - recon
   - ai
 comments: true

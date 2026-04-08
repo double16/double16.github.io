@@ -3,7 +3,6 @@ layout: post
 title:  "Crawling Large Sites"
 date:   2024-09-03 11:38:10 -0500
 categories:
-  - cyber
   - recon
 comments: true
 redirect_from:

@@ -3,8 +3,8 @@ layout: post
 title:  "Wild West Hackin' Fest 2026 - Denver"
 date:   2026-02-17
 categories:
-- cyber
 - conference
+- ai
 comments: true
 ---
 

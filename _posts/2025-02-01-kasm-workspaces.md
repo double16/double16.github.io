@@ -3,7 +3,6 @@ layout: post
 title:  "Kasm Workspaces Offensive Toolset"
 date:   2025-02-01 11:38:10 -0500
 categories:
-  - cyber
   - tools
 comments: true
 ---

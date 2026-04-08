@@ -3,7 +3,6 @@ layout: post
 title:  "HackTheBox Sau Report"
 date:   2024-06-12
 categories:
-  - cyber
   - report
 comments: true
 ---

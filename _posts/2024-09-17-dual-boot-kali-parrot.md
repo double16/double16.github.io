@@ -3,7 +3,6 @@ layout: post
 title: Dual Booting Kali and Parrot
 date: 2024-09-17
 categories:
-  - cyber
   - tools
 comments: true
 redirect_from:
