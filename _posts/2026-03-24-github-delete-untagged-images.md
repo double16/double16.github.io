@@ -12,7 +12,7 @@ TIL of a GitHub action that deletes untagged images from the container registry.
 ```yaml
   - uses: actions/delete-package-versions@v5
     with:
-      package-name: ${{ github.event.repository.name }}
+      package-name: {% raw %}${{ github.event.repository.name }}{% endraw %}
       package-type: 'container'
       min-versions-to-keep: 10
       delete-only-untagged-versions: 'true'
