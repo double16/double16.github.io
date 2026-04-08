@@ -3,9 +3,7 @@ layout: post
 title:  "Cyber-AutoAgent-ng: openai/gpt-oss-20b vs. ginandjuice.shop"
 date:   2026-04-07
 categories:
-- cyber
-- ai
-- tools
+- cyber-autoagent-ng
 comments: true
 ---
 

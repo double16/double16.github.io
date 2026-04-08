@@ -17,11 +17,9 @@
 title: Patrick Double | Secure Software Engineering
 email: "pat@patdouble.com"
 description: >-
-  With extensive experience in software engineering and cybersecurity, I specialize in
-  designing, implementing, and securing software solutions across diverse industries. Explore my work and insights into the latest trends in cybersecurity, DevSecOps, and 
-  open-source solutions.
+  I work in offensive security, with a focus on web applications, APIs, LLM, ML, secure code review, and security tooling. I develop practical tools and automation to improve testing efficiency. Here you’ll find my projects, research, and ramblings.
 #domain: double16.github.io
-tagline: "Exploring cybersecurity, automation, and open-source trends."
+tagline: "Breaking software, building tools, sharing tradecraft."
 baseurl: ""
 url: "https://double16.github.io"
 permalink: /l/:year/:month/:day/:title.html
@@ -86,6 +84,7 @@ exclude:
   - "*.iml"
   - .sass-cache/
   - .idea/
+  - .run/
   - .jekyll-cache/
   - gemfiles/
   - Gemfile

@@ -4,6 +4,7 @@ title:  "Cyber-AutoAgent-ng 0.8.0"
 date:   2026-04-07
 categories:
 - cyber
+- cyber-autoagent-ng
 - ai
 - tools
 comments: true

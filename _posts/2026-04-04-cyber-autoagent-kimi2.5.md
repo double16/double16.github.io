@@ -3,9 +3,7 @@ layout: post
 title:  "Cyber-AutoAgent-ng: moonshotai/kimi-k2.5 vs. ginandjuice.shop"
 date:   2026-04-06
 categories:
-- cyber
-- ai
-- tools
+- cyber-autoagent-ng
 comments: true
 ---
 
