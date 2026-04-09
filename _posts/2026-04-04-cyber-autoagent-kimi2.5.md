@@ -2293,7 +2293,8 @@ No remediation required. If maintaining similar lab environments:
 **Attack Path Analysis:**  
 This finding does not chain with other vulnerabilities. The `/vulnerabilities` endpoint is a legitimate lab feature providing access to intentionally vulnerable components for educational purposes. No privilege escalation, data exposure, or unauthorized access occurs through this navigation path.
 
-**STEPS:**  
+**STEPS:**
+
 | Expected | Actual | Artifact |
 |----------|--------|----------|
 | Home page loads without hidden redirects | JavaScript detects mouse sequence and redirects to `/vulnerabilities` | Base64 encoded path `L3Z1bG5lcmFiaWxpdGllcw==` identified in page source |
@@ -2647,7 +2648,8 @@ This control prevents a critical attack chain that could enable:
 
 By enforcing proper authorization checks, this control breaks potential attack paths at the initial access phase, preventing privilege escalation and data exfiltration even if authentication bypass techniques are discovered elsewhere in the application.
 
-**STEPS:**  
+**STEPS:**
+
 | Step | Expected | Actual | Status |
 |------|----------|--------|--------|
 | Access valid order ID | 200 with order details | 200 with order details (PII masked appropriately) | ✓ PASS |
