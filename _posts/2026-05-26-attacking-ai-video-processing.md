@@ -17,7 +17,7 @@ We will consider the following inferred data types:
 - Identifying objects
 - Summarizing the output of the above data types
 
-This post will demonstrate how to elicit LLM confusion, information disclosure, resource exhaustion, and service crashes by crafting videos with prompt injections, edge cases in streams and their properties, and simulating transmission errors. Tools are presented that tailor the videos to the system under test. We can loosely call this “fuzzing”. We will create videos to attack these systems and recommend mitigations.
+This post will demonstrate how to elicit LLM confusion, information disclosure, resource exhaustion, and service crashes by crafting videos with prompt injections, edge cases in streams and their properties, and simulating transmission errors. Tools are presented that tailor the videos to the system under test. We can loosely call this "fuzzing". We will create videos to attack these systems and recommend mitigations.
 
 ## Data Types
 
@@ -31,7 +31,7 @@ The current capabilities of AI video processing enable the extraction of the fol
 - Optical character recognition (OCR) of selected frames for any on-screen text
 - Frame caption using a caption model
 
-There is a lot of information that can be extracted from a video. A typical architecture is to use a “pipeline” that breaks the process into components. Each component of the pipeline is specific to the type of data it is extracting. Toward the end of the pipeline, the data from the several components are assembled into a final output. We'll assume this approach.
+There is a lot of information that can be extracted from a video. A typical architecture is to use a "pipeline" that breaks the process into components. Each component of the pipeline is specific to the type of data it is extracting. Toward the end of the pipeline, the data from the several components are assembled into a final output. We'll assume this approach.
 
 ## Video Properties
 
@@ -45,7 +45,7 @@ Video containers define how the video, audio, and subtitle streams are stored. T
 
 The frame rate is the number of frames per second (FPS). Typical frame rates are 24, 30, and 60. Videos capturing action, such as sporting events, may be 120 FPS. The frame rate isn't limited to these values, but there are historical reasons why they are common. The file size of the video is directly proportional to the frame rate. In our testing we can leverage an arbitrary frame rate to affect the video size and memory usage as described later on in this post.
 
-In the description of data types above, there is a qualifier of “selected frames”. A 24 FPS video that is 30 minutes long will have 43,200 frames. That is a lot to process and mostly unnecessary because so many frames are similar to their adjacent frames, with the same scene. The processing software will select a subset of frames to use with OCR, object classification, or a caption model.
+In the description of data types above, there is a qualifier of "selected frames". A 24 FPS video that is 30 minutes long will have 43,200 frames. That is a lot to process and mostly unnecessary because so many frames are similar to their adjacent frames, with the same scene. The processing software will select a subset of frames to use with OCR, object classification, or a caption model.
 
 ## Video Codec
 
@@ -59,7 +59,7 @@ An audio stream may have multiple channels. Stereo audio has two channels. Surro
 
 ## Subtitles
 
-Subtitle streams can either be text or image-based. Each string of text or image has a start and end time associated with it. Video discs typically have image-based subtitles, for which OCR is useful. There are many text-based subtitle formats. Some include markup features to specify fonts, bold, italics, motion, animation, and scripting. The process of adding subtitles to the video frames is called “burning in”. Image-based subtitles are merged on top of the video frames and provide little flexibility to the player. Text-based subtitles allow the player more flexibility with presentation.
+Subtitle streams can either be text or image-based. Each string of text or image has a start and end time associated with it. Video discs typically have image-based subtitles, for which OCR is useful. There are many text-based subtitle formats. Some include markup features to specify fonts, bold, italics, motion, animation, and scripting. The process of adding subtitles to the video frames is called "burning in". Image-based subtitles are merged on top of the video frames and provide little flexibility to the player. Text-based subtitles allow the player more flexibility with presentation.
 
 ## Attacks
 
@@ -147,7 +147,7 @@ This error-free assumption is valid in most settings. One case where this isn't 
 
 Now, we’ll look at how to use open-source tools to generate videos with fuzzed parameters to test these scenarios.
 
-The code we’ll discuss is on GitHub at https://github.com/double16/video-fuzzing. The scripts are written using Python 3.
+The code we’ll discuss is on GitHub at [https://github.com/double16/video-fuzzing](https://github.com/double16/video-fuzzing). The scripts are written using Python 3.
 
 The most important tool we’ll discuss is `ffmpeg` (https://ffmpeg.org/). It is a popular open-source video processing tool with support for a wide variety of formats, transformations, and filters.
 
@@ -275,7 +275,7 @@ These choices allow the video to be compressed enough to fit 50,000 scene change
 
 Object detection can be stress-tested by providing images with many objects in them. Typical objects are people, vehicles, and animals. At this time, the script does not generate images. Images will need to be provided from another source.
 
-“Scene labels” are subtitles for each scene. You can use some interesting fuzzing lists to further exercise the LLM. The text is URL decoded to allow control characters such as `%0A` or `%FE`. Avoid `%00`, the “null byte”, `ffmpeg` interprets it as the end of the subtitle.
+"Scene labels" are subtitles for each scene. You can use some interesting fuzzing lists to further exercise the LLM. The text is URL decoded to allow control characters such as `%0A` or `%FE`. Avoid `%00`, the "null byte", `ffmpeg` interprets it as the end of the subtitle.
 
 The other feature this script provides is uncommon resolutions and aspect ratios. The maximum resolution for H.265 is 16384×8640. That’s a large resolution but with a standard aspect ratio of 16:9. What about a video of resolution 16384x2? It may send object detection into an infinite loop!
 
