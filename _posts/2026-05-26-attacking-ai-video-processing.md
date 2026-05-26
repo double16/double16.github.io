@@ -8,8 +8,6 @@ categories:
 comments: true
 ---
 
-# Attacking AI Video Processing
-
 AI is processing videos to digest the content and providing summaries of the video, threat detection, behavioral tracking, medical rehabilitation analysis, to name a few. A variety of information can be inferred from videos, including object classification, audio transcription, subtitle streams, optical character recognition, and visual comparisons. The attack surface and potential vulnerabilities increase as more types of information are inferred from video content.
 
 We will consider the following inferred data types:
