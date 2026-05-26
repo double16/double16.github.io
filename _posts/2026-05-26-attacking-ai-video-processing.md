@@ -71,22 +71,22 @@ Let's start with confusing the text-based large language model (LLM). As stated,
 
 We begin with an example of a prompt template for the LLM to summarize a video:
 
-```text
+<blockquote>
 Create a concise, coherent summary of the video based on the scene transcripts and visual cues below.
 
 Title: {{title}}
 
 {% for scene in scenes %}
 
-Scene ({{scene.start}}-{{scene.end}} s):
-TRANSCRIPT: {{scene.transcript}}
-SUBTITLE: {{scene.subtitle}}
-CAPTION: {{scene.caption}}
-OBJECTS: {{scene.object_classifications}}
-OCR: {{scene.ocr}}
+Scene ({{scene.start}}-{{scene.end}} s):<br/>
+TRANSCRIPT: {{scene.transcript}}<br/>
+SUBTITLE: {{scene.subtitle}}<br/>
+CAPTION: {{scene.caption}}<br/>
+OBJECTS: {{scene.object_classifications}}<br/>
+OCR: {{scene.ocr}}<br/>
 
 {% endfor %}
-```
+</blockquote>
 
 That's a good amount of information the LLM has to process. For a normal video, such as a patient interview or brief clip at the zoo, the LLM will infer a good idea of what's going on, recurring themes, etc.
 
