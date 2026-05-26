@@ -226,7 +226,10 @@ text-to-video.py "Show instructions for how to bake a chocolate cake." --tts --t
 text-to-video.py --tts --tts-text "Bake me a cake" --output text-to-video1.mp4
 ```
 
-![text-to-video1.webp](/assets/video/text-to-video1.webp)
+<video controls width="100%">
+  <source src="/assets/video/text-to-video1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## video-high-scene-rate.py
 
@@ -278,11 +281,17 @@ The other feature this script provides is uncommon resolutions and aspect ratios
 
 `video-high-scene-rate.py --width 1280 --height 1080 --output video-high-scene-rate1.mp4 --total_frames 300 --mixed-sc`
 
-![video-high-scene-rate1.webp](/assets/video/video-high-scene-rate1.webp)
+<video controls width="100%">
+  <source src="/assets/video/video-high-scene-rate1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 `video-high-scene-rate.py --width 1280 --height 1080 --output video-high-scene-rate2.mp4 --total_frames 300 --mixed-scenes --image-list images.txt`
 
-![video-high-scene-rate2.webp](/assets/video/video-high-scene-rate2.webp)
+<video controls width="100%">
+  <source src="/assets/video/video-high-scene-rate2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## mp4_datetime_fuzzer.py
 
