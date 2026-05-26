@@ -71,7 +71,7 @@ Let's start with confusing the text-based large language model (LLM). As stated,
 
 We begin with an example of a prompt template for the LLM to summarize a video:
 
-```
+```text
 Create a concise, coherent summary of the video based on the scene transcripts and visual cues below.
 
 Title: {{title}}
