@@ -149,15 +149,15 @@ Now, we’ll look at how to use open-source tools to generate videos with fuzzed
 
 The code we’ll discuss is on GitHub at [https://github.com/double16/video-fuzzing](https://github.com/double16/video-fuzzing). The scripts are written using Python 3.
 
-The most important tool we’ll discuss is `ffmpeg` (https://ffmpeg.org/). It is a popular open-source video processing tool with support for a wide variety of formats, transformations, and filters.
+The most important tool we’ll discuss is [ffmpeg](https://ffmpeg.org/). It is a popular open-source video processing tool with support for a wide variety of formats, transformations, and filters.
 
-The other tools are for text-to-speech (TTS) generation. `espeak` (https://github.com/espeak-ng/espeak-ng/) is a cross-platform TTS tool. On macOS, the `say` command is built-in, and we will use this if available.
+The other tools are for text-to-speech (TTS) generation. [espeak](https://github.com/espeak-ng/espeak-ng/) is a cross-platform TTS tool. On macOS, the `say` command is built-in, and we will use this if available.
 
-Most operating systems should have packages for these tools. For Windows, use the Windows Subsystem for Linux (WSL) and a Debian-based distribution. See https://learn.microsoft.com/en-us/windows/wsl/install for installation instructions.
+Most operating systems should have packages for these tools. For Windows, use the Windows Subsystem for Linux (WSL) and a Debian-based distribution. See [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install) for installation instructions.
 
 Run the command that fits your system:
 
-1. `bundle brew` (Homebrew users on macOS or Linux, see https://brew.sh)
+1. `bundle brew` (Homebrew users on macOS or Linux, see [Homebrew](https://brew.sh))
 2. `apt install ffmpeg espeak-ng` (Debian, Ubuntu, Mint)
 3. `yum install ffmpeg espeak-ng` (Fedora, CentOS, RHEL)
 
