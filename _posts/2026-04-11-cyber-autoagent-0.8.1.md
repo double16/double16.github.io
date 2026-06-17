@@ -28,4 +28,4 @@ Some models did not follow the instruction to call `get_active_task` after `crea
 
 # advanced_payload_coordinator.py
 
-This tool was taking a very long time. It turns out that when the agent gives the tool a set of parameters, parameter discovery is done anyway and all parameters are scanned. This change only uses parameters that are provided. (If none are provider, parameter discovery is performed). A limit of five parameters are scanned by the tools to keep the runtime reasonable.
+This tool was taking a very long time. It turns out that when the agent gives the tool a set of parameters, parameter discovery is done anyway and all parameters are scanned. This change only uses parameters that are provided. (If none are provided, parameter discovery is performed). A limit of five parameters are scanned by the tools to keep the runtime reasonable.
