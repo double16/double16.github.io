@@ -71,7 +71,7 @@ jobs:
     needs: build
     steps:
       - name: Debug OIDC Claims
-        if: false
+        if: true
         uses: steve-todorov/oidc-debugger-action@v1
         with:
           audience: '${{ github.server_url }}/${{ github.repository }}'
