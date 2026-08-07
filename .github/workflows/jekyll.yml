@@ -67,7 +67,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Mirror site to S3
-        run: aws s3 sync "_site/" "s3://${{ vars.S3_BUCKET }}/" --delete --no-progress
+        run: aws s3 sync "_site/" "s3://${{ vars.S3_BUCKET }}/" --exclude "extra/*" --delete --no-progress
 
       - name: Invalidate CloudFront
         run: |

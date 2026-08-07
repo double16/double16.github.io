@@ -64,6 +64,17 @@ Options:
 
 The `-crf` option is a tradeoff between quality and size. Terminal recordings do not need as much data, so `28` is a good value. I've found my MP4 files are smaller than the GIF using `-crf 28`. If the quality isn't what you want, try `23`.
 
+For hardware acceleration on macOS:
+
+```shell
+ffmpeg -i terminal.gif -ignore_loop 0 -movflags +faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v hevc_videotoolbox -prio_speed:v false -profile:v main -tag:v hvc1 -preset veryslow terminal.mp4
+```
+
+- `-c:v hevc_videotoolbox`: encode with H.265/HEVC with macOS hardware encoder
+- `-prio_speed:v false`: do not prioritize speed over quality
+- `-profile:v main`: use the H.265 main profile, this is the most common
+- `-tag:v hvc1`: hvc1 is a compatibility tag
+
 ## Example
 
 ### Animated GIF
