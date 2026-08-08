@@ -12,7 +12,7 @@ permalink: /about/
 
 I am a seasoned Software Engineer and Cybersecurity professional, holding certifications such as OSCP, OSWA, and CISSP. My career spans various industries, where I have specialized in web applications and automation, supporting organization goals with quality software and infrastructure.
 
-Currently, I serve as a Security Engineer at [NetSPI](https://netspi.com), where I assess the security of web applications, APIs, LLM and machine learning models.
+Currently, I serve as a Security Engineer at [NetSPI](https://netspi.com), where I assess the security of AI/ML applications, web applications, and APIs.
 
 <div style="clear: both;"></div>
 
