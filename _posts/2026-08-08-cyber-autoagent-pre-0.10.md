@@ -9,9 +9,14 @@ comments: true
 
 My latest work on Cyber-AutoAgent-ng is a large refactor. The previous agent approach is a single main agent with instructions not only for doing the security work (identifying and verifying vulnerabilities), but managing work flow. The new approach is a multi-agent system, where each agent has a narrow role. The model is more effective and recovery of model misbehavior (reasoning loop, lack of tool calls) is more effective.
 
-Python code now manages the work flow. The instructions for the agent work flow were always very specific. I did a lot of work to convince the model to follow the work flow, but it was never satisfactory. This makes sense, models are non-deterministic by design.
+Python code now manages the work flow. The instructions for the agent work flow were always very specific. I did a lot of work with prompting to convince the model to follow the work flow, but it was never satisfactory. This makes sense, models are non-deterministic by design. It felt good to delete all of that out of the system prompt.
 
-The actor/critic pattern has been implemented for specific agents to improve their performance. After adding the critic, I was surprised to see how badly some things were behaving that I hadn't noticed! The pattern was strongly recommended in the AI Hacking Discord and with good reason. It has increased quality dramatically. It also allows lesser models to be used where before they would fail to produce a good plan.
+The actor/critic pattern has been implemented for specific agents to improve their performance. After adding the critic, I was surprised to see how badly some things were behaving that I hadn't noticed! The pattern was strongly recommended in the AI Hacking Discord and with good reason. It has increased quality dramatically.
+
+- Some of the plans, which guide the general workflow, were bad. Single phase or so abstract they were meaningless.
+- Contradictory prompts were found. Some text would say "all, everything, ..." and other would say "specific, enumerate, ...". Some models could resolve that, others would get into reasoning loops. Even when resolved, the results between runs could be very different.
+- Evaluation of a task status, is it done or failed, is now a critic that is fed back to the task. Previously, the main agent decided the status and its reasoning was weak. It preferred 'done' because it was easier to reason about.
+- Phases were complete if there tasks reached terminal state. No concept of meeting the objective. There is a new evaluator specifically for that purpose.
 
 The following is a list of the agents and their roles:
 
@@ -28,7 +33,7 @@ The **task_prompt_builder** is the biggest win. The previous design with one mai
 
 Reporting has gotten an overhaul. A lot of it is written with Python code because it doesn't need an LLM. Parts of the report best done with inference are given to the LLM with an actor/critic cycle. This increases the report accuracy.
 
-Using multiple agents with narrow tasks and customized prompts is a huge improvement. The context limitations have prevented me from using most MCP servers. I'm looking forward to what Cyber-AutoAgent-ng can do in the near future.
+Using multiple agents with narrow tasks and customized prompts is a huge improvement. The context limitations have prevented me from using most MCP servers. I'm looking forward to what Cyber-AutoAgent-ng will do with MCP tools.
 
 After the 0.10 release, look for:
 - Credential store, both provided by the user and from self-registration on target sites.
